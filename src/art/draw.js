@@ -115,7 +115,19 @@ export function drawGrid(ctx, camX, camY) {
 }
 
 // 18단계: 제목 배경 bg_title.png(없으면 기존 그라데이션+달 폴백).
+// 제목 화면 대표 그림(assets/title.png, 무당과 귀신 행렬). 화면 비율에 맞춰 꽉 채우고, 글자가 읽히게 가운데를 어둡게 덮는다.
+let TITLE_ART = null;
+if (typeof Image !== 'undefined') { TITLE_ART = new Image(); TITLE_ART.src = new URL('../../assets/title.png', import.meta.url).href; }
 export function drawTitleBg(ctx, W, H) {
+  if (TITLE_ART && TITLE_ART.complete && TITLE_ART.naturalWidth > 0) {
+    const s = Math.max(W / TITLE_ART.naturalWidth, H / TITLE_ART.naturalHeight);
+    const w = TITLE_ART.naturalWidth * s, h = TITLE_ART.naturalHeight * s;
+    ctx.drawImage(TITLE_ART, (W - w) / 2, (H - h) / 2, w, h);
+    const g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, 'rgba(8,8,14,0.15)'); g.addColorStop(0.3, 'rgba(8,8,14,0.55)'); g.addColorStop(0.75, 'rgba(8,8,14,0.7)'); g.addColorStop(1, 'rgba(8,8,14,0.85)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    return true;
+  }
   const e = IMAGES.get('bg_title');
   if (e && e.ready && e.w > 0) {
     ctx.drawImage(e.img, 0, 0, W, H);

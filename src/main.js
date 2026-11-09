@@ -88,16 +88,21 @@ function markKey(s) {
   s.lastKey = (s.time || 0);
 }
 
+const CODE_KEY = { KeyW: 'w', KeyA: 'a', KeyS: 's', KeyD: 'd', KeyP: 'p', KeyM: 'm', KeyR: 'r' };
+function keyOf(e) { return CODE_KEY[e.code] || e.key; }
+
 function onKey(e) {
+  // 키보드가 한글 입력 상태여도 WASD·P·M·R 이 동작하도록 물리 키(e.code)로 읽는다
+  const K = keyOf(e);
   ensureAudio(); // 첫 사용자 입력 뒤 AudioContext 생성
   // 이동(방향키/WSAD)만 자동 레벨업 시계 갱신
-  if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' ||
-      e.key === 'ArrowRight' || e.key === 'w' || e.key === 'a' ||
-      e.key === 's' || e.key === 'd' || e.key === 'W' || e.key === 'A' ||
-      e.key === 'S' || e.key === 'D') markKey(state);
-  if (e.key === 'm' || e.key === 'M') {
+  if (K === 'ArrowUp' || K === 'ArrowDown' || K === 'ArrowLeft' ||
+      K === 'ArrowRight' || K === 'w' || K === 'a' ||
+      K === 's' || K === 'd' || K === 'W' || K === 'A' ||
+      K === 'S' || K === 'D') markKey(state);
+  if (K === 'm' || K === 'M') {
     try { state.muted = toggleMute(); if (!state.muted && state.scene === SCENE.PLAY && !state.paused) startMusic(); } catch (e2) { /* 무시 */ }
-  } else if (e.key === 'Enter') {
+  } else if (K === 'Enter') {
     if (state.scene === SCENE.TITLE) {
       startGame();
     } else if (state.scene === SCENE.GAMEOVER || state.scene === SCENE.WIN) {
@@ -108,15 +113,15 @@ function onKey(e) {
       e.preventDefault();
       return;
     } else { pickCard(state, 0); e.preventDefault(); } // 카드: Enter = 1번 (scroll 방지)
-  } else if ((e.key === 'r' || e.key === 'R') && (state.scene === SCENE.GAMEOVER || state.scene === SCENE.WIN)) {
+  } else if ((K === 'r' || K === 'R') && (state.scene === SCENE.GAMEOVER || state.scene === SCENE.WIN)) {
     // 16단계: 결과 화면 R = 바로 재시작
     startGame();
     e.preventDefault();
     return;
-  } else if (e.key === '1' || e.key === '2' || e.key === '3') {
-    pickCard(state, Number(e.key) - 1);
+  } else if (K === '1' || K === '2' || K === '3') {
+    pickCard(state, Number(K) - 1);
     e.preventDefault(); // 카드가 뜨는 중: 스크롤·기타 기본 동작 방지(REFERENCE 15단계)
-  } else if ((e.key === 'p' || e.key === 'P' || e.key === 'Escape') && (state.scene === SCENE.PLAY || state.scene === SCENE.PAUSE)) {
+  } else if ((K === 'p' || K === 'P' || K === 'Escape') && (state.scene === SCENE.PLAY || state.scene === SCENE.PAUSE)) {
     state.scene = state.scene === SCENE.PAUSE ? SCENE.PLAY : SCENE.PAUSE;
     state.paused = state.scene === SCENE.PAUSE;
     if (state.choosing) state.chooseAt = performance.now(); // 일시정지 뒤 자동 선택 시계 다시

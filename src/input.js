@@ -1,13 +1,15 @@
 // 키 상태: window.__input (키가 눌러져 있는지)
+const CODE_KEY = { KeyW: 'w', KeyA: 'a', KeyS: 's', KeyD: 'd' };
 export function createInput() {
   const keys = Object.create(null);
   const attach = () => {
     if (typeof window === 'undefined' || !window.addEventListener) return;
     window.addEventListener('keydown', (e) => {
       keys[e.key] = true;
+      if (CODE_KEY[e.code]) keys[CODE_KEY[e.code]] = true;   // 한글 입력 상태에서도 WASD
       if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '].includes(e.key)) e.preventDefault();
     });
-    window.addEventListener('keyup', (e) => { keys[e.key] = false; });
+    window.addEventListener('keyup', (e) => { keys[e.key] = false; if (CODE_KEY[e.code]) keys[CODE_KEY[e.code]] = false; });
     window.addEventListener('blur', () => { for (const k in keys) keys[k] = false; });
   };
   const down = (k) => !!keys[k];

@@ -52,7 +52,8 @@ export function drawTitle(ctx, s, bgMode) {
     ctx.fillStyle = 'rgba(8, 8, 12, 0.45)';
     ctx.fillRect(0, 0, W, H);
   }
-  // 제목
+  // 제목 (그림 위에서도 읽히게 그림자)
+  ctx.shadowColor = 'rgba(0,0,0,0.85)'; ctx.shadowBlur = 10; ctx.shadowOffsetY = 2;
   ctx.textAlign = 'center';
   ctx.fillStyle = '#f2efe6';
   ctx.font = 'bold 84px sans-serif';
@@ -66,9 +67,10 @@ export function drawTitle(ctx, s, bgMode) {
     ctx.font = '28px sans-serif';
     ctx.fillText(TITLE.startLabel, W / 2, H * 0.6);
   }
-  // 조작 안내
-  ctx.fillStyle = '#c9c4b4';
-  ctx.font = '16px sans-serif';
+  // 조작 안내 (반투명 판 위에)
+  ctx.save(); ctx.shadowBlur = 0; ctx.fillStyle = 'rgba(8,8,14,0.6)'; ctx.fillRect(W / 2 - 170, H * 0.72 - 22, 340, TITLE.controls.length * 24 + 12); ctx.restore();
+  ctx.fillStyle = '#e6e1d2';
+  ctx.font = '17px sans-serif';
   TITLE.controls.forEach((c, i) => ctx.fillText(c, W / 2, H * 0.72 + i * 24));
   // 16단계: 최고 기록 (localStorage 캐시 — 프레임을 타지 않는 모듈 변수)
   ctx.fillStyle = '#3fb8a8';
