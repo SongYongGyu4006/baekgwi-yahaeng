@@ -1,0 +1,293 @@
+{
+ "style": "어두운 먹색 바탕에 단청 오방색(청·적·황·백·흑)을 포인트로 쓰는 도트 그림체다. 외곽선은 짙은 먹색 1픽셀로 또렷하게 두르고, 음영은 2~3단계로만 단순하게 찍는다. 귀신은 창백한 흰색·청록 기운에 붉은 눈, 플레이어와 무기는 따뜻한 황·적색으로 대비를 줘서 한눈에 구분된다.",
+ "palette": {
+  "a": "#0d0d12",
+  "b": "#1c1c26",
+  "c": "#2e2e3d",
+  "d": "#5a5a6e",
+  "e": "#f2efe6",
+  "f": "#c9c4b4",
+  "g": "#c8302b",
+  "h": "#7a1a1e",
+  "i": "#e8b83a",
+  "j": "#a97c1c",
+  "k": "#2f6fb5",
+  "l": "#1b3d6e",
+  "m": "#3fb8a8",
+  "n": "#8a5fc0",
+  "o": "#e88a3a",
+  "p": "#e9b995"
+ },
+ "sprites": [
+  {
+   "id": "player",
+   "what": "무당 해랑. 흰 저고리에 붉은 치마, 검은 머리를 묶고 방울을 든 정면 모습. 걷기 2프레임",
+   "size": 24,
+   "frames": 2
+  },
+  {
+   "id": "enemy_maiden",
+   "what": "Cheonyeo gwishin, a female ghost: pale white funeral hanbok robe (sobok), very long straight black hair hanging down and hiding her face completely, no visible legs, floating, ghostly cyan glow at the hem. Clearly different from the shaman player (no red skirt, no bell).",
+   "size": 24,
+   "frames": 2
+  },
+  {
+   "id": "enemy_wisp",
+   "what": "도깨비불 적. 작은 청록색 불꽃 덩어리에 붉은 눈 둘",
+   "size": 16,
+   "frames": 2
+  },
+  {
+   "id": "enemy_egg",
+   "what": "달걀귀신. 이목구비 없는 매끈한 흰 달걀 얼굴에 어두운 한복 몸통",
+   "size": 24,
+   "frames": 2
+  },
+  {
+   "id": "enemy_jiangshi",
+   "what": "강시. 청색 관복과 이마의 노란 부적, 팔을 앞으로 뻗고 뻣뻣하게 선 모습",
+   "size": 24,
+   "frames": 2
+  },
+  {
+   "id": "enemy_bulgasari",
+   "what": "불가사리. 철을 먹는 작은 곰 몸에 코끼리 코, 쇠빛 회색 몸과 붉은 눈",
+   "size": 24,
+   "frames": 2
+  },
+  {
+   "id": "enemy_shard",
+   "what": "불가사리 조각. 작은 회색 쇠덩이 새끼 괴물",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "enemy_reaper",
+   "what": "저승사자. 검은 갓과 검은 도포, 창백한 얼굴, 붉은 눈. 정예라 크게",
+   "size": 32,
+   "frames": 2
+  },
+  {
+   "id": "boss_gumiho",
+   "what": "구미호 보스. 흰 여우 얼굴과 불꽃처럼 펼쳐진 아홉 꼬리, 붉은 눈과 이마의 푸른 구슬",
+   "size": 32,
+   "frames": 4
+  },
+  {
+   "id": "wpn_talisman",
+   "what": "부적 투사체. 노란 종이에 붉은 글자 느낌의 문양(글자 아님), 세로로 긴 모양",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "wpn_fan_wave",
+   "what": "부채바람. 펼친 부채 모양 초승달 바람결, 흰색과 청색",
+   "size": 32,
+   "frames": 3
+  },
+  {
+   "id": "wpn_bell",
+   "what": "방울 구체. 황금색 둥근 방울에 하이라이트",
+   "size": 16,
+   "frames": 2
+  },
+  {
+   "id": "wpn_fireball",
+   "what": "도깨비불 무기. 푸른 불꽃 구체와 꼬리",
+   "size": 16,
+   "frames": 3
+  },
+  {
+   "id": "wpn_spear",
+   "what": "죽창. 가로로 뻗은 대나무 창, 뾰족한 날",
+   "size": 32,
+   "frames": 1
+  },
+  {
+   "id": "wpn_drum_ring",
+   "what": "장구 충격파. 황색과 흰색 동심원 고리",
+   "size": 32,
+   "frames": 3
+  },
+  {
+   "id": "wpn_lightning",
+   "what": "벼락. 세로로 꺾인 노란 번개와 흰 중심",
+   "size": 32,
+   "frames": 3
+  },
+  {
+   "id": "wpn_ink",
+   "what": "먹물 장판. 검은 먹 웅덩이에 보라빛 가장자리",
+   "size": 32,
+   "frames": 2
+  },
+  {
+   "id": "gem_small",
+   "what": "작은 영혼 구슬. 청록색 작은 구슬",
+   "size": 16,
+   "frames": 2
+  },
+  {
+   "id": "gem_mid",
+   "what": "중간 영혼 구슬. 푸른색 구슬과 흰 반짝임",
+   "size": 16,
+   "frames": 2
+  },
+  {
+   "id": "gem_big",
+   "what": "큰 영혼 구슬. 황금과 붉은 기운이 도는 큰 구슬",
+   "size": 16,
+   "frames": 2
+  },
+  {
+   "id": "item_jade",
+   "what": "옥구슬 소품 아이콘. 청록 옥구슬과 붉은 매듭",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_straw_shoes",
+   "what": "짚신 소품 아이콘. 황토색 짚신 한 켤레",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_pouch",
+   "what": "복주머니 소품 아이콘. 붉은 비단 주머니에 황색 끈",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_ginseng",
+   "what": "인삼 소품 아이콘. 사람 모양 뿌리와 초록 잎",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_gat",
+   "what": "갓 소품 아이콘. 검은 갓과 넓은 챙",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_jar",
+   "what": "달항아리 소품 아이콘. 둥근 흰 항아리",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_ink",
+   "what": "A traditional East Asian ink stick: a small black rectangular bar of solid ink with a thin gold engraved pattern on its side, lying slightly tilted (an object, not footwear).",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "item_mirror",
+   "what": "거울 소품 아이콘. 둥근 청동 거울",
+   "size": 16,
+   "frames": 1
+  },
+  {
+   "id": "chest",
+   "what": "정예·보스 상자. 붉은 칠 나무 상자에 금 장식",
+   "size": 24,
+   "frames": 2
+  },
+  {
+   "id": "tile_ground",
+   "what": "바닥 타일. 먹색 바탕에 희미한 격자와 드문 풀잎·돌 점",
+   "size": 32,
+   "frames": 1
+  }
+ ],
+ "sfx": [
+  {
+   "id": "talisman",
+   "what": "부적 발사. 짧은 종이 휙 소리, 높은 노이즈 스윕"
+  },
+  {
+   "id": "hit",
+   "what": "적 피격. 짧고 낮은 톡 하는 사각파 타격"
+  },
+  {
+   "id": "kill",
+   "what": "적 처치. 짧게 내려가는 팝 소리"
+  },
+  {
+   "id": "hurt",
+   "what": "플레이어 피격. 낮고 둔탁한 장구 타격과 하강음"
+  },
+  {
+   "id": "gem",
+   "what": "구슬 획득. 맑고 높은 사인파 짧은 틱, 연속될수록 음정 상승"
+  },
+  {
+   "id": "levelup",
+   "what": "레벨업. 방울처럼 맑은 사인파 3음 상승 아르페지오"
+  },
+  {
+   "id": "card",
+   "what": "카드 선택 확정. 맑은 방울 소리 한 번"
+  },
+  {
+   "id": "bell",
+   "what": "방울 무기 접촉. 작은 고음 사인 틴클"
+  },
+  {
+   "id": "drum",
+   "what": "장구 충격파. 깊은 저음 사인 킥과 짧은 노이즈"
+  },
+  {
+   "id": "thunder",
+   "what": "벼락. 크게 터지는 노이즈 버스트와 저음 울림"
+  },
+  {
+   "id": "fire",
+   "what": "도깨비불 발사. 낮게 일렁이는 노이즈 휘익"
+  },
+  {
+   "id": "evolve",
+   "what": "신명 진화. 장구 두 번과 올라가는 방울 화음, 웅장함"
+  },
+  {
+   "id": "chest",
+   "what": "상자 열림. 삐걱 소리 후 반짝이는 고음 사인"
+  },
+  {
+   "id": "boss",
+   "what": "보스 등장. 아주 낮은 톱니파 울림이 길게 이어짐"
+  },
+  {
+   "id": "win",
+   "what": "승리. 피리 느낌 밝은 상승 선율"
+  },
+  {
+   "id": "gameover",
+   "what": "게임오버. 느리게 내려가는 저음 3음"
+  }
+ ],
+ "music": "피리를 닮은 사각·삼각파 단음 선율을 느린 5음계(궁상각치우)로 돌리고, 낮은 장구 같은 사인 킥을 일정 박으로 깔아 음산하면서 긴장감 있는 짧은 루프를 반복한다.",
+ "key_art": [
+  {
+   "name": "title",
+   "use": "제목 화면 배경",
+   "prompt_en": "Korean folk horror night scene, a lone shaman girl in white hanbok holding a bronze bell stands in a village lane under a huge full moon, a parade of translucent ghosts, teal will-o-wisps and a nine-tailed fox silhouette looming behind, ink wash painting style with dancheong five-color accents of red, blue, yellow, white, black, dark moody atmosphere, no text, no letters, no logos",
+   "width": 1280,
+   "height": 720
+  },
+  {
+   "name": "store_cover",
+   "use": "판매 페이지 대표 이미지",
+   "prompt_en": "Epic illustration of a Korean shaman fending off swarms of ghosts with flying paper talismans and a folding fan, glowing blue and red spirit fire, giant white nine-tailed fox spirit above, dark ink background with traditional Korean dancheong color accents, dramatic composition, no text, no letters, no logos",
+   "width": 1024,
+   "height": 1024
+  },
+  {
+   "name": "store_banner",
+   "use": "판매 페이지 가로 배너",
+   "prompt_en": "Wide night panorama of a traditional Korean hanok village at midnight, full moon, a procession of folklore ghosts with long black hair, egg-faced ghost, goblin fire lights, and a reaper in black gat marching toward a small shaman figure holding a talisman, ink wash with muted dancheong colors, no text, no letters, no logos",
+   "width": 630,
+   "height": 500
+  }
+ ]
+}

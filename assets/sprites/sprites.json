@@ -1,0 +1,318 @@
+{
+ "player": {
+  "file": "assets/sprites/player.png",
+  "px": 64
+ },
+ "enemy_maiden": {
+  "file": "assets/sprites/enemy_maiden.png",
+  "px": 64
+ },
+ "enemy_wisp": {
+  "file": "assets/sprites/enemy_wisp.png",
+  "px": 40
+ },
+ "enemy_egg": {
+  "file": "assets/sprites/enemy_egg.png",
+  "px": 64
+ },
+ "enemy_jiangshi": {
+  "file": "assets/sprites/enemy_jiangshi.png",
+  "px": 64
+ },
+ "enemy_bulgasari": {
+  "file": "assets/sprites/enemy_bulgasari.png",
+  "px": 64
+ },
+ "enemy_shard": {
+  "file": "assets/sprites/enemy_shard.png",
+  "px": 40
+ },
+ "enemy_reaper": {
+  "file": "assets/sprites/enemy_reaper.png",
+  "px": 80
+ },
+ "boss_gumiho": {
+  "file": "assets/sprites/boss_gumiho.png",
+  "px": 128
+ },
+ "chest": {
+  "file": "assets/sprites/chest.png",
+  "px": 64
+ },
+ "wpn_talisman": {
+  "file": "assets/sprites/wpn_talisman.png",
+  "px": 32
+ },
+ "wpn_fan_wave": {
+  "file": "assets/sprites/wpn_fan_wave.png",
+  "px": 64
+ },
+ "wpn_bell": {
+  "file": "assets/sprites/wpn_bell.png",
+  "px": 32
+ },
+ "wpn_fireball": {
+  "file": "assets/sprites/wpn_fireball.png",
+  "px": 32
+ },
+ "wpn_spear": {
+  "file": "assets/sprites/wpn_spear.png",
+  "px": 64
+ },
+ "wpn_drum_ring": {
+  "file": "assets/sprites/wpn_drum_ring.png",
+  "px": 64
+ },
+ "wpn_lightning": {
+  "file": "assets/sprites/wpn_lightning.png",
+  "px": 64
+ },
+ "wpn_ink": {
+  "file": "assets/sprites/wpn_ink.png",
+  "px": 64
+ },
+ "gem_small": {
+  "file": "assets/sprites/gem_small.png",
+  "px": 32
+ },
+ "gem_mid": {
+  "file": "assets/sprites/gem_mid.png",
+  "px": 32
+ },
+ "gem_big": {
+  "file": "assets/sprites/gem_big.png",
+  "px": 32
+ },
+ "item_jade": {
+  "file": "assets/sprites/item_jade.png",
+  "px": 32
+ },
+ "item_straw_shoes": {
+  "file": "assets/sprites/item_straw_shoes.png",
+  "px": 32
+ },
+ "item_pouch": {
+  "file": "assets/sprites/item_pouch.png",
+  "px": 32
+ },
+ "item_ginseng": {
+  "file": "assets/sprites/item_ginseng.png",
+  "px": 32
+ },
+ "item_gat": {
+  "file": "assets/sprites/item_gat.png",
+  "px": 32
+ },
+ "item_jar": {
+  "file": "assets/sprites/item_jar.png",
+  "px": 32
+ },
+ "item_ink": {
+  "file": "assets/sprites/item_ink.png",
+  "px": 32
+ },
+ "item_mirror": {
+  "file": "assets/sprites/item_mirror.png",
+  "px": 32
+ },
+ "tile_ground": {
+  "file": "assets/sprites/tile_ground.png",
+  "px": 128
+ },
+ "_anims": {
+  "player": {
+   "walk": [
+    "assets/sprites/player_walk0.png",
+    "assets/sprites/player_walk1.png",
+    "assets/sprites/player_walk2.png",
+    "assets/sprites/player_walk3.png"
+   ],
+   "act": [
+    "assets/sprites/player_idle.png",
+    "assets/sprites/player_attack.png",
+    "assets/sprites/player_hurt.png",
+    "assets/sprites/player_dead.png"
+   ]
+  },
+  "enemy_maiden": {
+   "move": [
+    "assets/sprites/enemy_maiden_move0.png",
+    "assets/sprites/enemy_maiden_move1.png",
+    "assets/sprites/enemy_maiden_move2.png",
+    "assets/sprites/enemy_maiden_move3.png"
+   ]
+  },
+  "enemy_jiangshi": {
+   "move": [
+    "assets/sprites/enemy_jiangshi_move0.png",
+    "assets/sprites/enemy_jiangshi_move1.png",
+    "assets/sprites/enemy_jiangshi_move2.png",
+    "assets/sprites/enemy_jiangshi_move3.png"
+   ]
+  }
+ },
+ "bg_ground": {
+  "file": "assets/sprites/bg_ground.png",
+  "px": 1024
+ },
+ "fx_01": {
+  "file": "assets/sprites/fx_01.png",
+  "px": 112
+ },
+ "fx_02": {
+  "file": "assets/sprites/fx_02.png",
+  "px": 112
+ },
+ "fx_03": {
+  "file": "assets/sprites/fx_03.png",
+  "px": 112
+ },
+ "fx_04": {
+  "file": "assets/sprites/fx_04.png",
+  "px": 112
+ },
+ "fx_05": {
+  "file": "assets/sprites/fx_05.png",
+  "px": 112
+ },
+ "fx_06": {
+  "file": "assets/sprites/fx_06.png",
+  "px": 112
+ },
+ "fx_07": {
+  "file": "assets/sprites/fx_07.png",
+  "px": 112
+ },
+ "fx_08": {
+  "file": "assets/sprites/fx_08.png",
+  "px": 112
+ },
+ "fx_09": {
+  "file": "assets/sprites/fx_09.png",
+  "px": 112
+ },
+ "fx_10": {
+  "file": "assets/sprites/fx_10.png",
+  "px": 112
+ },
+ "fx_11": {
+  "file": "assets/sprites/fx_11.png",
+  "px": 112
+ },
+ "fx_12": {
+  "file": "assets/sprites/fx_12.png",
+  "px": 112
+ },
+ "fx_13": {
+  "file": "assets/sprites/fx_13.png",
+  "px": 112
+ },
+ "fx_14": {
+  "file": "assets/sprites/fx_14.png",
+  "px": 112
+ },
+ "fx_15": {
+  "file": "assets/sprites/fx_15.png",
+  "px": 112
+ },
+ "fx_16": {
+  "file": "assets/sprites/fx_16.png",
+  "px": 112
+ },
+ "decor_01": {
+  "file": "assets/sprites/decor_01.png",
+  "px": 96
+ },
+ "decor_02": {
+  "file": "assets/sprites/decor_02.png",
+  "px": 96
+ },
+ "decor_03": {
+  "file": "assets/sprites/decor_03.png",
+  "px": 96
+ },
+ "decor_04": {
+  "file": "assets/sprites/decor_04.png",
+  "px": 96
+ },
+ "decor_05": {
+  "file": "assets/sprites/decor_05.png",
+  "px": 96
+ },
+ "decor_06": {
+  "file": "assets/sprites/decor_06.png",
+  "px": 96
+ },
+ "decor_07": {
+  "file": "assets/sprites/decor_07.png",
+  "px": 96
+ },
+ "decor_08": {
+  "file": "assets/sprites/decor_08.png",
+  "px": 96
+ },
+ "decor_09": {
+  "file": "assets/sprites/decor_09.png",
+  "px": 96
+ },
+ "decor_10": {
+  "file": "assets/sprites/decor_10.png",
+  "px": 96
+ },
+ "decor_11": {
+  "file": "assets/sprites/decor_11.png",
+  "px": 96
+ },
+ "decor_12": {
+  "file": "assets/sprites/decor_12.png",
+  "px": 96
+ },
+ "decor_13": {
+  "file": "assets/sprites/decor_13.png",
+  "px": 96
+ },
+ "decor_14": {
+  "file": "assets/sprites/decor_14.png",
+  "px": 96
+ },
+ "decor_15": {
+  "file": "assets/sprites/decor_15.png",
+  "px": 96
+ },
+ "decor_16": {
+  "file": "assets/sprites/decor_16.png",
+  "px": 96
+ },
+ "icon_talisman": {
+  "file": "assets/sprites/icon_talisman.png",
+  "px": 72
+ },
+ "icon_fan_wave": {
+  "file": "assets/sprites/icon_fan_wave.png",
+  "px": 72
+ },
+ "icon_bell": {
+  "file": "assets/sprites/icon_bell.png",
+  "px": 72
+ },
+ "icon_fireball": {
+  "file": "assets/sprites/icon_fireball.png",
+  "px": 72
+ },
+ "icon_spear": {
+  "file": "assets/sprites/icon_spear.png",
+  "px": 72
+ },
+ "icon_drum_ring": {
+  "file": "assets/sprites/icon_drum_ring.png",
+  "px": 72
+ },
+ "icon_lightning": {
+  "file": "assets/sprites/icon_lightning.png",
+  "px": 72
+ },
+ "icon_ink": {
+  "file": "assets/sprites/icon_ink.png",
+  "px": 72
+ }
+}

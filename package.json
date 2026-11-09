@@ -1,0 +1,16 @@
+{
+  "name": "baekgwi-yahaeng",
+  "version": "1.0.0",
+  "description": "AI 팀이 2주 동안 만든 브라우저 서바이버스 게임(실험 기록)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "keywords": [],
+  "author": "SongYongGyu4006",
+  "license": "MIT",
+  "type": "module"
+}
